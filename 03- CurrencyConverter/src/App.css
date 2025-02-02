@@ -1,0 +1,182 @@
+/* App.css */
+
+/* Container */
+.currency-converter {
+  max-width: 40rem;
+  margin: 2.5rem auto;
+  padding: 1.25rem;
+  background-color: #ffffff; /* bg-white */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+}
+
+/* Title */
+.currency-converter h2 {
+  margin-bottom: 1.25rem; /* mb-5 */
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  color: #4a5568; /* text-gray-700 */
+  text-align: center; /* Center align title */
+}
+
+/* Grid for dropdowns */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; /* gap-4 */
+  align-items: end;
+}
+
+@media (min-width: 640px) {
+  /* sm:grid-cols-3 */
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Swap currency button */
+.swap-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1.25rem; /* -mb-5 */
+}
+
+.swap-button button {
+  padding: 0.5rem; /* p-2 */
+  background-color: #e5e7eb; /* bg-gray-200 */
+  border-radius: 9999px; /* rounded-full */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.swap-button button:hover {
+  background-color: #d1d5db; /* hover:bg-gray-300 */
+}
+
+.swap-button .icon {
+  font-size: 1.25rem; /* text-xl */
+  color: #4a5568; /* text-gray-700 */
+}
+
+/* Dropdown */
+.currency-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* gap-2 */
+}
+
+.currency-dropdown label {
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #4a5568; /* text-gray-700 */
+}
+
+.currency-dropdown .dropdown-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+}
+
+.currency-dropdown select {
+  flex: 1;
+  padding: 0.5rem; /* p-2 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  outline: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+}
+
+.currency-dropdown select:focus {
+  border-color: #6366f1; /* focus:ring-indigo-500 */
+  box-shadow: 0 0 0 2px #c7d2fe; /* focus:ring-indigo-500 */
+}
+
+.currency-dropdown .favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem; /* text-xl */
+  color: #fbbf24; /* text-yellow-400 */
+  transition: color 0.2s;
+}
+
+.currency-dropdown .favorite-button:hover {
+  color: #f59e0b; /* hover:text-yellow-500 */
+}
+
+/* Input field */
+.input-container {
+  margin-top: 1rem; /* mt-4 */
+}
+
+.input-container label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #4a5568; /* text-gray-700 */
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.5rem; /* p-2 */
+  margin-top: 0.25rem; /* mt-1 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+  outline: none;
+}
+
+.input-container input:focus {
+  border-color: #6366f1; /* focus:ring-indigo-500 */
+  box-shadow: 0 0 0 2px #c7d2fe; /* focus:ring-indigo-500 */
+}
+
+/* Convert button */
+.convert-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem; /* mt-6 */
+}
+
+.convert-button button {
+  padding: 0.5rem 1.25rem; /* px-5 py-2 */
+  background-color: #4f46e5; /* bg-indigo-600 */
+  color: #ffffff; /* text-white */
+  border-radius: 0.375rem; /* rounded-md */
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  outline: none;
+}
+
+.convert-button button:hover {
+  background-color: #4338ca; /* hover:bg-indigo-700 */
+}
+
+.convert-button button:focus {
+  box-shadow: 0 0 0 2px #c7d2fe; /* focus:ring-indigo-500 */
+}
+
+.convert-button button.animate-pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Converted amount display */
+.converted-amount {
+  margin-top: 1rem; /* mt-4 */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+  color: #16a34a; /* text-green-600 */
+  text-align: right;
+}
