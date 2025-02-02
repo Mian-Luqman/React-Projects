@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    padding: 0 20px;
+}
+#navimg img{
+    width: 10vw;
+}
+#navlinks ul{
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+}
+#navlinks ul li a{
+    text-decoration: none;
+    color: black;
+}
+#navbtn{
+    display: flex;
+    gap: 2vw;
+}
+#navbtn button{
+    background-color: transparent;
+    border: none;
+}
+#navbtnstarted{
+    background-color: #d8412d !important;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    color: #d8412d;
+}
+#navlinks ul li a:hover{
+    color: #d8412d;
+}
+#hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+#herocontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#heroimg img{
+    height: 65vh;
+}
+#herocontent h1{
+    font-size: 50px;
+}
+#herocontent p{
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+#herocontent button{
+    background-color: #d8412d !important;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+    font-size: x-large;
+    border: none;
+}
+#herocontent input{
+    padding: 10px;
+    font-size: large;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+#downloadbtn{
+    display: flex;
+    justify-content: end;
+}
+#hero-section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heroimg2 img{
+    height: 40vh;
+}
+#contactcontainer{
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    padding: 20px 0;
+}
+#footercontainer{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footerimg img{
+    height: 15vh;
+}
+#footercontent{
+    display: flex;
+    gap: 2vw;
+}
+#footercontent h2{
+    font-size: small;
+    margin-bottom: 20px;
+    color: rgb(66, 66, 66);
+    font-weight: bold;
+}
+#footercontent ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#footercontent ul li a{
+    text-decoration: none;
+    color: gray;
+}
+#footercontent ul li a:hover{
+    cursor: pointer;
+    color: #d8412d;
+}
+#footerend{
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+    align-items: center;
+    /* background: #d3d3d3; */
+}
+
+#socialmediaicons{
+    display: flex;
+    gap: 1vw;
+    cursor: pointer;
+}
+#githubfollowers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    height: 10vh;
+}
+#herocontentAbout{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 0 20px;
+    width: 45vw;
+}
+#herocontentAbout h1{
+    margin-bottom: 10px;
+    color: rgb(48, 47, 47);
+}
+#herocontentAbout p{
+    font-size: large;
+    color: rgb(83, 83, 83);
+}
+.red{
+    color: #d8412d !important;
+}
