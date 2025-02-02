@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #1e293b; /* Tailwind's bg-gray-800 */
+  color: #f59e0b; /* Tailwind's text-orange-500 */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.password-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+}
+
+.copy-button {
+  background-color: #1d4ed8; /* Tailwind's bg-blue-700 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #2563eb; /* Lighter shade of blue */
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.slider {
+  cursor: pointer;
+}
+
+label {
+  color: white;
+}
