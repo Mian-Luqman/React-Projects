@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+/* App Container */
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.color-button {
+  color: white;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: Arial, sans-serif;
+}
+
+/* Specific Color Classes */
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.cyan {
+  background-color: cyan;
+}
